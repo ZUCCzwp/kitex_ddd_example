@@ -1,0 +1,4 @@
+Name: my-awesome-service
+Port: 8080
+ListenOn: 0.0.0.0
+Mode: dev

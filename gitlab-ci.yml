@@ -1,0 +1,13 @@
+# 这里不要修改 这是 pipline的路径
+include:
+  - project: 'ops/pipeline'
+    ref: main
+    file: 'go-pipline.yaml'
+# 根据实际修改 如果允许测试用例 失败后 流水线继续运行的话 就写 true
+variables:
+  # 失败后是否继续运行 true(允许) / false(不允许)
+  test_failure: 'false'
+  # 是否跳过测试阶段 跳过 true / 不跳过 false
+  no_test: 'true'
+  # 是否 通过 argocd 部署服务到对应环境 true / false
+  deploy_argo: 'false'
