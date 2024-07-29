@@ -11,6 +11,7 @@ import (
 	"github.com/ZUCCzwp/kitex_ddd_example/pkg/conf"
 	"github.com/ZUCCzwp/kitex_ddd_example/pkg/onelog"
 	kitexlogrus "github.com/ZUCCzwp/kitex_ddd_example/pkg/onelogrus"
+	_ "github.com/ZUCCzwp/kitex_ddd_example/pkg/signal"
 	"github.com/cloudwego/kitex/pkg/rpcinfo"
 	"github.com/cloudwego/kitex/server"
 	"github.com/kitex-contrib/obs-opentelemetry/tracing"
