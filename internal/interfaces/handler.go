@@ -1,4 +1,4 @@
-package handler
+package interfaces
 
 import (
 	"context"
@@ -7,7 +7,7 @@ import (
 	"github.com/ZUCCzwp/kitex_ddd_example/pkg/onelog"
 )
 
-// HelloServiceImpl implements the last service interface defined in the IDL.
+// HelloServiceImpl implements the last service interfaces defined in the IDL.
 type HelloServiceImpl struct {
 	SvcCtx *svc.ServiceContext
 }

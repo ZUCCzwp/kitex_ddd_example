@@ -6,7 +6,7 @@ import (
 	"io"
 )
 
-// FormatLogger is a logger interface that output logs with a format.
+// FormatLogger is a logger interfaces that output logs with a format.
 type FormatLogger interface {
 	Tracef(format string, v ...interface{})
 	Debugf(format string, v ...interface{})
@@ -17,7 +17,7 @@ type FormatLogger interface {
 	Fatalf(format string, v ...interface{})
 }
 
-// Logger is a logger interface that provides logging function with levels.
+// Logger is a logger interfaces that provides logging function with levels.
 type Logger interface {
 	Trace(v ...interface{})
 	Debug(v ...interface{})
@@ -29,7 +29,7 @@ type Logger interface {
 	Forever(v ...interface{})
 }
 
-// CtxLogger is a logger interface that accepts a context argument and output
+// CtxLogger is a logger interfaces that accepts a context argument and output
 // logs with a format.
 type CtxLogger interface {
 	CtxTracef(ctx context.Context, format string, v ...interface{})

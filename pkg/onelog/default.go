@@ -186,7 +186,7 @@ func CtxInfoOptions(ctx context.Context, v interface{}, fields ...logrus.Fields)
 }
 
 // CtxDebugf calls the default logger's CtxDebugf method.
-//func CtxDebugf(ctx context.Context, opts []LogOption, format string, v ...interface{}) {
+//func CtxDebugf(ctx context.Context, opts []LogOption, format string, v ...interfaces{}) {
 //	logger.CtxDebugf(ctx, opts, format, v...)
 //}
 
