@@ -11,7 +11,7 @@ import (
 
 type ServiceContext struct {
 	config   config.Config
-	userRepo repository.UserRepository
+	UserRepo repository.UserRepository
 }
 
 func NewServiceContext(c config.Config) *ServiceContext {
@@ -22,7 +22,7 @@ func NewServiceContext(c config.Config) *ServiceContext {
 	defer mysqlConn.Close()
 	return &ServiceContext{
 		config:   c,
-		userRepo: persistence.NewUserRepository(mysqlConn),
+		UserRepo: persistence.NewUserRepository(mysqlConn),
 	}
 }
 

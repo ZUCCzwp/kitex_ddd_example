@@ -1,3 +1,3 @@
-# my-awesome-service
+# kitex_ddd_example
 
-A brief description of the my-awesome-service service.
+A brief description of the kitex_ddd_example service.

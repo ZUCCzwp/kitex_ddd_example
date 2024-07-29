@@ -7,6 +7,7 @@ import (
 	"github.com/ZUCCzwp/kitex_ddd_example/internal/interfaces"
 	"github.com/ZUCCzwp/kitex_ddd_example/internal/svc"
 	"github.com/ZUCCzwp/kitex_ddd_example/kitex_gen/hello/helloservice"
+	"github.com/ZUCCzwp/kitex_ddd_example/kitex_gen/user/userservice"
 	"github.com/ZUCCzwp/kitex_ddd_example/pkg/conf"
 	"github.com/ZUCCzwp/kitex_ddd_example/pkg/onelog"
 	kitexlogrus "github.com/ZUCCzwp/kitex_ddd_example/pkg/onelogrus"
@@ -37,8 +38,14 @@ func main() {
 	//)
 	//defer p.Shutdown(context.Background())
 	ctx := svc.NewServiceContext(c)
-	// TODO: register your services here
 	err := helloservice.RegisterService(svr, &interfaces.HelloServiceImpl{
+		SvcCtx: ctx,
+	})
+	if err != nil {
+		return
+	}
+
+	err = userservice.RegisterService(svr, &interfaces.UserServiceImpl{
 		SvcCtx: ctx,
 	})
 	if err != nil {
