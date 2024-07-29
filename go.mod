@@ -1,4 +1,4 @@
-module github.com/ZUCCzwp/ddd/my-awesome-service
+module github.com/ZUCCzwp/kitex_ddd_example
 
 go 1.22.5
 

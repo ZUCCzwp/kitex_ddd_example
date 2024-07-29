@@ -3,7 +3,7 @@
 package helloservice
 
 import (
-	hello "github.com/ZUCCzwp/ddd/my-awesome-service/kitex_gen/hello"
+	hello "github.com/ZUCCzwp/kitex_ddd_example/kitex_gen/hello"
 	server "github.com/cloudwego/kitex/server"
 )
 

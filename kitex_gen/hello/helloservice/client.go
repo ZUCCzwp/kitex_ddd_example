@@ -4,7 +4,7 @@ package helloservice
 
 import (
 	"context"
-	hello "github.com/ZUCCzwp/ddd/my-awesome-service/kitex_gen/hello"
+	hello "github.com/ZUCCzwp/kitex_ddd_example/kitex_gen/hello"
 	client "github.com/cloudwego/kitex/client"
 	callopt "github.com/cloudwego/kitex/client/callopt"
 )

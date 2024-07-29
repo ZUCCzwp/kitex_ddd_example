@@ -1,6 +1,6 @@
 package svc
 
-import "github.com/ZUCCzwp/ddd/my-awesome-service/internal/config"
+import "github.com/ZUCCzwp/kitex_ddd_example/internal/config"
 
 type ServiceContext struct {
 	config config.Config

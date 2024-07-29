@@ -5,7 +5,7 @@ package helloservice
 import (
 	"context"
 	"errors"
-	hello "github.com/ZUCCzwp/ddd/my-awesome-service/kitex_gen/hello"
+	hello "github.com/ZUCCzwp/kitex_ddd_example/kitex_gen/hello"
 	client "github.com/cloudwego/kitex/client"
 	kitex "github.com/cloudwego/kitex/pkg/serviceinfo"
 	streaming "github.com/cloudwego/kitex/pkg/streaming"

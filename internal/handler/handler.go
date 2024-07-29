@@ -2,9 +2,9 @@ package handler
 
 import (
 	"context"
-	"github.com/ZUCCzwp/ddd/my-awesome-service/internal/svc"
-	"github.com/ZUCCzwp/ddd/my-awesome-service/kitex_gen/hello"
-	"github.com/ZUCCzwp/ddd/my-awesome-service/pkg/onelog"
+	"github.com/ZUCCzwp/kitex_ddd_example/internal/svc"
+	"github.com/ZUCCzwp/kitex_ddd_example/kitex_gen/hello"
+	"github.com/ZUCCzwp/kitex_ddd_example/pkg/onelog"
 )
 
 // HelloServiceImpl implements the last service interface defined in the IDL.

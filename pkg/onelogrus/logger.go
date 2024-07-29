@@ -2,7 +2,7 @@ package onelogrus
 
 import (
 	"context"
-	"github.com/ZUCCzwp/ddd/my-awesome-service/pkg/onelog"
+	"github.com/ZUCCzwp/kitex_ddd_example/pkg/onelog"
 	"github.com/sirupsen/logrus"
 	"io"
 )
