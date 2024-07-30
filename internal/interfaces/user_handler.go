@@ -2,7 +2,7 @@ package interfaces
 
 import (
 	"context"
-	"github.com/ZUCCzwp/kitex_ddd_example/internal/application"
+	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/service"
 	"github.com/ZUCCzwp/kitex_ddd_example/internal/svc"
 	user "github.com/ZUCCzwp/kitex_ddd_example/kitex_gen/user"
 )
@@ -14,7 +14,7 @@ type UserServiceImpl struct {
 
 // GetUser implements the UserServiceImpl interface.
 func (s *UserServiceImpl) GetUser(ctx context.Context, req *user.Request) (resp *user.Response, err error) {
-	l := application.NewUserApp(ctx, s.SvcCtx)
+	l := service.NewUserService(ctx, s.SvcCtx)
 	data, err := l.Get(ctx, int(req.Id))
 	if err != nil {
 		return nil, err

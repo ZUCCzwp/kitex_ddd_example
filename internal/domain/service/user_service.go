@@ -1,10 +1,10 @@
-// Package application -----------------------------
-// @file      : user_app.go
+// Package service -----------------------------
+// @file      : user_service.go
 // @author    : Jimmy
 // @contact   : 2114272829@qq.com
 // @time      : 2024/7/29 下午3:46
 // -------------------------------------------
-package application
+package service
 
 import (
 	"context"
@@ -12,23 +12,23 @@ import (
 	"github.com/ZUCCzwp/kitex_ddd_example/internal/svc"
 )
 
-type UserAppIer interface {
+type UserServiceIer interface {
 	Get(ctx context.Context, id int) (*entity.User, error)
 }
 
-type UserApp struct {
+type UserService struct {
 	ctx    context.Context
 	svcCtx *svc.ServiceContext
 }
 
-func NewUserApp(ctx context.Context, svcCtx *svc.ServiceContext) *UserApp {
-	return &UserApp{
+func NewUserService(ctx context.Context, svcCtx *svc.ServiceContext) *UserService {
+	return &UserService{
 		ctx:    ctx,
 		svcCtx: svcCtx,
 	}
 }
 
-func (u *UserApp) Get(ctx context.Context, id int) (*entity.User, error) {
+func (u *UserService) Get(ctx context.Context, id int) (*entity.User, error) {
 	data, err := u.svcCtx.UserRepo.Get(ctx, id)
 	if err != nil {
 		return nil, err
