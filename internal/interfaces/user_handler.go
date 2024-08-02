@@ -2,7 +2,7 @@ package interfaces
 
 import (
 	"context"
-	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/service"
+	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/user/service"
 	"github.com/ZUCCzwp/kitex_ddd_example/internal/svc"
 	user "github.com/ZUCCzwp/kitex_ddd_example/kitex_gen/user"
 )

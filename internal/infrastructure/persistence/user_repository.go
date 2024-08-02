@@ -9,9 +9,9 @@ package persistence
 import (
 	"context"
 	"database/sql"
-	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/entity"
+	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/user/entity"
 
-	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/repository"
+	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/user/repository"
 	_ "github.com/go-sql-driver/mysql" // driver
 )
 

@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"github.com/ZUCCzwp/kitex_ddd_example/internal/config"
-	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/repository"
+	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/user/repository"
 	"github.com/ZUCCzwp/kitex_ddd_example/internal/infrastructure/persistence"
 	"os"
 )

@@ -8,7 +8,7 @@ package repository
 
 import (
 	"context"
-	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/entity"
+	"github.com/ZUCCzwp/kitex_ddd_example/internal/domain/user/entity"
 )
 
 //go:generate mockgen -package $GOPACKAGE -source $GOFILE -destination mock_$GOFILE

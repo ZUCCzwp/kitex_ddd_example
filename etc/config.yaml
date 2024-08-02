@@ -1,4 +1,4 @@
-Name: my-awesome-service
+Name: kitex_ddd_example
 Port: 8080
 ListenOn: 0.0.0.0
 Mode: dev
